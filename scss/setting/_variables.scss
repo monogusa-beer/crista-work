@@ -1,0 +1,24 @@
+//  ブレイクポイント
+$breakpoints: (
+	xs: 375px,
+	s: 560px,
+	m: 768px,
+	l: 960px,
+	xl: 1200px,
+);
+
+// 配色
+$color-black: #333;
+$color-white: #fff;
+$color-hero-Bg: #222;
+$color-content-bg: #f0f0f0;
+$color-footer: #525252;
+$color-btn: #000;
+
+// font-family
+$font-en-main: "Montserrat";
+$font-jp-main: "Noto Sans JP";
+$font-jp-sub: YuGothic, "Yu Gothic";
+
+// 絶対値指定
+

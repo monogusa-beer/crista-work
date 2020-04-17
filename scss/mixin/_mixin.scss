@@ -1,0 +1,13 @@
+@mixin mq($breakpoint) {
+	@media screen and (min-width: map-get($breakpoints,$breakpoint)) {
+		@content;
+	}
+}
+
+@mixin font-jp-main {
+	font-family: $font-jp-main, $font-jp-sub, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+@mixin font-jp-sub {
+	font-family: $font-jp-sub, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}

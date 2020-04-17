@@ -1,0 +1,16 @@
+.kvTextContainer {
+	color: $color-white;
+	&__summary {
+		@include font-jp-sub;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	&__name {
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	&__catch {
+		font-size: 56px;
+		font-weight: 800;
+	}
+}

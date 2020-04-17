@@ -1,0 +1,35 @@
+.kv {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	margin-bottom: 78px;
+	&__background {
+		background-color: $color-kv-bg;
+		width: 75%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	&__imgContainer {
+		width: 75%;
+		height: 87%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		img,
+		source {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center top;
+			font-family: "object-fit: cover; object-position: center top;"; //IE対応
+		}
+	}
+	&__textContainer {
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%);
+	}
+}

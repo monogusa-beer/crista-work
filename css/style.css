@@ -122,6 +122,8 @@ button {
 
 body {
   font-family: "Montserrat", "Helvetica Neue", Arial, "Noto Sans JP", YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  overflow-x: hidden;
+  letter-spacing: 0.06em;
 }
 
 a {
@@ -131,5 +133,68 @@ a {
 
 a:hover {
   opacity: 0.8;
+}
+
+.kv {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 78px;
+}
+
+.kv__background {
+  background-color: #222;
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.kv__imgContainer {
+  width: 75%;
+  height: 87%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.kv__imgContainer img,
+.kv__imgContainer source {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+  font-family: "object-fit: cover; object-position: center top;";
+}
+
+.kv__textContainer {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.kvTextContainer {
+  color: #fff;
+}
+
+.kvTextContainer__summary {
+  font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.kvTextContainer__name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.kvTextContainer__catch {
+  font-size: 56px;
+  font-weight: 800;
 }
 /*# sourceMappingURL=style.css.map */

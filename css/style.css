@@ -327,6 +327,7 @@ a:hover {
      object-fit: cover;
   -o-object-position: center top;
      object-position: center top;
+  vertical-align: bottom;
   font-family: "object-fit: cover; object-position: center top;";
 }
 

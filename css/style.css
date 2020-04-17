@@ -179,18 +179,18 @@ a:hover {
   color: #fff;
 }
 
-.kvTextContainer__summary {
+.kv-textContainer__summary {
   font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.kvTextContainer__name {
+.kv-textContainer__name {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.kvTextContainer__catch {
+.kv-textContainer__catch {
   font-size: 56px;
   font-weight: 800;
 }
@@ -204,6 +204,29 @@ a:hover {
   width: 100%;
   background-color: #f0f0f0;
   padding: 40px 15px;
+}
+
+.sectionContainer-flexItem {
+  width: 100%;
+}
+
+.sectionContainer-flexItem:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.sectionContainer-flexItem__title {
+  margin-bottom: 30px;
+}
+
+.sectionContainer-flexItem__img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.sectionContainer-flexItem__summary {
+  font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  letter-spacing: 0;
+  margin-bottom: 30px;
 }
 
 .about {
@@ -227,11 +250,11 @@ a:hover {
   padding: 50px 30px;
 }
 
-.aboutContainer__title {
+.about-container__title {
   margin-bottom: 30px;
 }
 
-.aboutContainer__detail {
+.about-container__detail {
   font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: 14px;
   line-height: 2;
@@ -239,26 +262,59 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.topFlexItem {
-  width: 100%;
+.topics {
+  padding: 40px 15px;
 }
 
-.topFlexItem:not(:last-of-type) {
-  margin-bottom: 40px;
-}
-
-.topFlexItem__title {
+.topics__title {
   margin-bottom: 30px;
 }
 
-.topFlexItem__img {
+.topics__list {
+  margin-bottom: 30px;
+}
+
+.topics-listItem {
+  border-bottom: 1px solid #ddd;
+}
+
+.topics-listItem:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.topics-listItem__date {
+  font-size: 10px;
+  color: #cecece;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.topics-listItem__title {
+  font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.contact {
+  padding: 40px 15px;
+  background-color: #f0f0f0;
+}
+
+.contact__img {
   width: 100%;
   margin-bottom: 30px;
 }
 
-.topFlexItem__summary {
+.contact__title {
+  margin-bottom: 30px;
+}
+
+.contact__detail {
   font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   letter-spacing: 0;
+  line-height: 2;
   margin-bottom: 30px;
 }
 

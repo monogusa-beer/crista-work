@@ -1,0 +1,17 @@
+.contact  {
+	padding: 40px 15px;
+	background-color: $color-content-bg;
+	&__img {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__detail {
+		@include font-jp-sub;
+		letter-spacing: 0;
+		line-height: 2;
+		margin-bottom: 30px;
+	}
+}

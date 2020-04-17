@@ -15,7 +15,7 @@
     <!-- picturefillの読み込み -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.js"></script>
 
-		<!-- google fontの読み込み -->
+    <!-- google fontの読み込み -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -46,7 +46,7 @@
             />
           </picture>
         </div>
-        <div class="kv__textContainer kvTextContainer">
+        <div class="kv__textContainer">
           <p class="kvTextContainer__summary">デザインで人を笑顔にする会社</p>
           <p class="kvTextContainer__name">DIGSMILE INC.</p>
           <p class="kvTextContainer__catch">
@@ -57,10 +57,42 @@
         </div>
       </div>
       <div class="sectionContainer">
-        <section class="about"></section>
+        <section class="about">
+          <div class="about__container">
+            <h2 class="aboutContainer__title u-title">about us</h2>
+            <p class="aboutContainer__detail">
+              DIGSMILEは、デザインで人を笑顔にする会社。<br />
+              なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br />
+              DIGSMILEの社名にはそんな想いが込められています。
+            </p>
+            <a href="about.html" class="aboutContainer__btn u-btn">read more</a>
+          </div>
+        </section>
         <div class="sectionContainer__flexBox">
-          <section class="works"></section>
-          <section class="culture"></section>
+          <section class="topFlexItem">
+            <h2 class="topFlexItem__title u-title">works</h2>
+            <img
+              class="topFlexItem__img"
+              src="img/top-works.jpg"
+              alt=""
+              srcset="img/top-works.jpg 1x, img/top-works@2x.jpg 2x"
+            />
+            <p class="topFlexItem__summary">DIGSMILEの制作実績を紹介します。</p>
+            <a href="" class="topFlexItem__btn u-btn">read more</a>
+          </section>
+          <section class="topFlexItem">
+            <h2 class="topFlexItem__title u-title">culture</h2>
+            <img
+              class="topFlexItem__img"
+              src="img/top-culture.jpg"
+              alt=""
+              srcset="img/top-culture.jpg 1x, img/top-culture@2x.jpg 2x"
+            />
+            <p class="topFlexItem__summary">
+              DIGSMILEの社内文化について紹介します。
+            </p>
+            <a href="" class="topFlexItem__btn u-btn">read more</a>
+          </section>
         </div>
       </div>
       <section class="topics"></section>

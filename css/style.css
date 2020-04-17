@@ -123,7 +123,7 @@ button {
 body {
   font-family: "Montserrat", "Helvetica Neue", Arial, "Noto Sans JP", YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   overflow-x: hidden;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
 }
 
 a {
@@ -176,9 +176,6 @@ a:hover {
   right: 15px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-}
-
-.kvTextContainer {
   color: #fff;
 }
 
@@ -196,5 +193,90 @@ a:hover {
 .kvTextContainer__catch {
   font-size: 56px;
   font-weight: 800;
+}
+
+.sectionContainer {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.sectionContainer__flexBox {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 40px 15px;
+}
+
+.about {
+  background-image: url(../img/top-about_sp.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 50px 15px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .about {
+    background-image: url(../img/top-about_sp@2x.jpg);
+  }
+}
+
+.about__container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 50px 30px;
+}
+
+.aboutContainer__title {
+  margin-bottom: 30px;
+}
+
+.aboutContainer__detail {
+  font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0;
+  margin-bottom: 30px;
+}
+
+.topFlexItem {
+  width: 100%;
+}
+
+.topFlexItem:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.topFlexItem__title {
+  margin-bottom: 30px;
+}
+
+.topFlexItem__img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.topFlexItem__summary {
+  font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  letter-spacing: 0;
+  margin-bottom: 30px;
+}
+
+.u-title {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.u-btn {
+  display: block;
+  width: 160px;
+  height: 38px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  line-height: 38px;
+  text-transform: uppercase;
+  font-size: 11px;
 }
 /*# sourceMappingURL=style.css.map */

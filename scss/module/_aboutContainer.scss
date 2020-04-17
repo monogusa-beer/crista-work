@@ -1,0 +1,12 @@
+.aboutContainer {
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__detail {
+		@include font-jp-sub;
+		font-size: 14px;
+		line-height: 2;
+		letter-spacing: 0;
+		margin-bottom: 30px;
+	}
+}

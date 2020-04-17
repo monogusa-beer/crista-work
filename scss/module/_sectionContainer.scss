@@ -1,0 +1,9 @@
+.sectionContainer {
+	width: 100%;
+	margin-bottom: 40px;
+	&__flexBox {
+		width: 100%;
+		background-color: $color-content-bg;
+		padding: 40px 15px;
+	}
+}

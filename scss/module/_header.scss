@@ -1,0 +1,33 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 100%;
+	color: $color-white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	z-index: 1;
+	transition: background-color 0.3s;
+	&__logo {
+		display: block;
+		width: 190px;
+	}
+	&__menu {
+		display: flex;
+		align-items: center;
+		span {
+			text-transform: uppercase;
+			display: block;
+			font-size: 10px;
+			font-weight: 800;
+			letter-spacing: 0;
+		}
+	}
+}
+
+	.is-headerActive .header {
+		background-color: $color-black;
+	}

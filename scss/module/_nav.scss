@@ -1,0 +1,14 @@
+.nav {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba($color-kv-bg, 0.95);
+	transform: translateX(100%);
+	transition: all 0.3s ease;
+}
+
+.is-navActive .nav {
+	transform: translateX(0);
+}

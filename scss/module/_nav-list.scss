@@ -1,0 +1,19 @@
+.nav-list {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	&__item {
+		text-transform: uppercase;
+		display: block;
+		font-size: 20px;
+		font-weight: 800;
+		&:not(:last-of-type) {
+			margin-bottom: 30px;
+		}
+		&:first-of-type {
+			margin-bottom: 40px;
+		}
+	}
+}

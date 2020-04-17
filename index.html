@@ -25,9 +25,32 @@
   </head>
 
   <body>
-    <header class="header"></header>
+    <header id="header" class="header">
+			<a href="index.html"><img src="img/site-logo.svg" alt="DIGSMILE" class="header__logo"></a>
+			<div class="header__menu">
+				<button type="button" id="js-hamburgerButton" class="hamburgerButton" aria-controls="nav" aria-expanded="false">
+					<span class="hamburgerButton__line">
+						<span class="u-visuallyHidden">
+							メニューを開閉する
+						</span>
+					</span>
+				</button>
+				<nav id="nav" class="nav">
+					<div class="nav__bg"></div>
+					<ul class="nav-list">
+						<li class="js-nav-list__item nav-list__item"><a href="index.html"><img src="img/logo-icon.svg" alt="DIGSMILE"></a></li>
+						<li class="js-nav-list__item nav-list__item"><a href="about.html">about us</a></li>
+						<li class="js-nav-list__item nav-list__item"><a href="#works">works</a></li>
+						<li class="js-nav-list__item nav-list__item"><a href="#culture">culture</a></li>
+						<li class="js-nav-list__item nav-list__item"><a href="#topics">topics</a></li>
+						<li class="js-nav-list__item nav-list__item"><a href="contact.html">contact</a></li>
+					</ul>
+				</nav>
+				<span>menu</span>
+			</div>
+		</header>
     <main class="main">
-      <div class="kv">
+      <div id="kv" class="kv">
         <div class="kv__background"></div>
         <div class="kv__imgContainer">
           <picture>
@@ -57,7 +80,7 @@
         </div>
       </div>
       <div class="sectionContainer">
-        <section class="about">
+        <section id="about" class="about">
           <div class="about__container">
             <h2 class="about-container__title u-title">about us</h2>
             <p class="about-container__detail">
@@ -71,7 +94,7 @@
           </div>
         </section>
         <div class="sectionContainer__flexBox">
-          <section class="sectionContainer-flexItem">
+          <section id="works" class="sectionContainer-flexItem">
             <h2 class="sectionContainer-flexItem__title u-title">works</h2>
             <img
               class="sectionContainer-flexItem__img"
@@ -82,11 +105,11 @@
             <p class="sectionContainer-flexItem__summary">
               DIGSMILEの制作実績を紹介します。
             </p>
-            <a href="" class="sectionContainer-flexItem__btn u-btn"
+            <a href="#" class="sectionContainer-flexItem__btn u-btn"
               >read more</a
             >
           </section>
-          <section class="sectionContainer-flexItem">
+          <section id="culture" class="sectionContainer-flexItem">
             <h2 class="sectionContainer-flexItem__title u-title">culture</h2>
             <img
               class="sectionContainer-flexItem__img"
@@ -97,13 +120,13 @@
             <p class="sectionContainer-flexItem__summary">
               DIGSMILEの社内文化について紹介します。
             </p>
-            <a href="" class="sectionContainer-flexItem__btn u-btn"
+            <a href="#" class="sectionContainer-flexItem__btn u-btn"
               >read more</a
             >
           </section>
         </div>
       </div>
-      <section class="topics">
+      <section id="topics" class="topics">
         <h2 class="topics__title u-title">latest topics</h2>
         <ul class="topics__list">
           <li class="topics-listItem">
@@ -133,7 +156,7 @@
         </ul>
         <a href="#" class="topics__btn u-btn">read more</a>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <img
           class="contact__img"
           src="img/top-contact.jpg"
@@ -145,10 +168,10 @@
           制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br />
           まずはお気軽にご連絡ください。担当者から改めて返信いたします。
         </p>
-        <a href="" class="contact__btn u-btn">read more</a>
+        <a href="contact.html" class="contact__btn u-btn">read more</a>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
 			<small>©2018 DIGSMILE INC.</small>
 		</footer>
     <script src="js/script.js"></script>

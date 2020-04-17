@@ -318,6 +318,15 @@ a:hover {
   margin-bottom: 30px;
 }
 
+.footer {
+  background-color: #525252;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 10px;
+}
+
 .u-title {
   font-size: 28px;
   font-weight: 800;

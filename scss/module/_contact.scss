@@ -4,9 +4,25 @@
 	@include mq(m) {
 		padding: 40px calc(100% - 550px) 80px 30px;
 	}
+	@include mq(l) {
+		padding: 60px 50px 120px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+	@include mq(xl) {
+		padding: 60px calc((100% - 1100px) / 2) 120px;
+	}
 	&__img {
+		display: block;
 		width: 100%;
 		margin-bottom: 30px;
+		@include mq(l) {
+			width: 47%;
+			height: 100%;
+			margin-bottom: 0;
+		}
 	}
 	&__title {
 		margin-bottom: 30px;
@@ -16,5 +32,8 @@
 		letter-spacing: 0;
 		line-height: 2;
 		margin-bottom: 30px;
+		@include mq(l) {
+			margin-right: 80px;
+		}
 	}
 }

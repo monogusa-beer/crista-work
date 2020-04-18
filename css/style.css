@@ -163,9 +163,21 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .header {
+    padding: 0 58px;
+  }
+}
+
 .header__logo {
   display: block;
   width: 190px;
+}
+
+@media screen and (min-width: 960px) {
+  .header__logo {
+    width: 260px;
+  }
 }
 
 .header__menu {
@@ -272,9 +284,37 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+@media screen and (min-width: 960px) {
+  .nav {
+    width: 520px;
+    left: initial;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .nav-bg {
+    width: calc(100vw - 520px);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(34, 34, 34, 0.6);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
 .is-navActive .nav {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.is-navActive .nav-bg {
+  -webkit-transform: translateX(-520px);
+          transform: translateX(-520px);
 }
 
 .nav-list {
@@ -306,6 +346,12 @@ a:hover {
   height: 100vh;
   position: relative;
   margin-bottom: 78px;
+}
+
+@media screen and (min-width: 960px) {
+  .kv {
+    margin-bottom: 120px;
+  }
 }
 
 .kv__background {
@@ -352,10 +398,26 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .kv__textContainer {
+    top: 40%;
+    left: 75%;
+    right: initial;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
 .kv-textContainer__summary {
   font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+@media screen and (min-width: 960px) {
+  .kv-textContainer__summary {
+    font-size: 20px;
+  }
 }
 
 .kv-textContainer__name {
@@ -363,9 +425,21 @@ a:hover {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 960px) {
+  .kv-textContainer__name {
+    font-size: 20px;
+  }
+}
+
 .kv-textContainer__catch {
   font-size: 56px;
   font-weight: 800;
+}
+
+@media screen and (min-width: 960px) {
+  .kv-textContainer__catch {
+    font-size: 72px;
+  }
 }
 
 .sectionContainer {
@@ -382,6 +456,24 @@ a:hover {
 @media screen and (min-width: 768px) {
   .sectionContainer__flexBox {
     padding: 60px 30px 40px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .sectionContainer__flexBox {
+    padding: 180px 50px 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sectionContainer__flexBox {
+    padding: 180px calc((100vw - 1100px) / 2) 60px;
   }
 }
 
@@ -402,6 +494,13 @@ a:hover {
 @media screen and (min-width: 768px) {
   .sectionContainer-flexItem:not(:last-of-type) {
     margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .sectionContainer-flexItem:not(:last-of-type) {
+    margin-bottom: 0;
+    margin-right: 60px;
   }
 }
 
@@ -447,6 +546,22 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .about {
+    background-image: url(../img/top-about_pc.jpg);
+    max-width: 1100px;
+    margin: 0 auto -100px;
+    padding: 110px 50px;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 960px) and (min-resolution: 192dpi) {
+  .about {
+    background-image: url(../img/top-about_pc@2x.jpg);
+  }
+}
+
 .about__container {
   width: 100%;
   height: 100%;
@@ -457,6 +572,14 @@ a:hover {
 @media screen and (min-width: 768px) {
   .about__container {
     padding: 40px 30px;
+    max-width: 590px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .about__container {
+    margin: 0;
   }
 }
 
@@ -482,12 +605,37 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .topics {
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .topics {
+    padding: 60px calc((100vw - 1100px) / 2);
+  }
+}
+
 .topics__title {
   margin-bottom: 30px;
 }
 
 .topics__list {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 960px) {
+  .topics__list {
+    width: 700px;
+    margin: 0 0 30px auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .topics__btn {
+    margin: 0 0 0 auto;
+  }
 }
 
 .topics-listItem {
@@ -524,9 +672,43 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .contact {
+    padding: 60px 50px 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding: 60px calc((100% - 1100px) / 2) 120px;
+  }
+}
+
 .contact__img {
+  display: block;
   width: 100%;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 960px) {
+  .contact__img {
+    width: 47%;
+    height: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .contact__title {
@@ -538,6 +720,12 @@ a:hover {
   letter-spacing: 0;
   line-height: 2;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 960px) {
+  .contact__detail {
+    margin-right: 80px;
+  }
 }
 
 .footer {
@@ -553,6 +741,12 @@ a:hover {
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .u-title {
+    font-size: 32px;
+  }
 }
 
 .u-btn {

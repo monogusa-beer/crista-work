@@ -8,6 +8,10 @@
 		@include mq(m) {
 			margin-bottom: 80px;
 		}
+		@include mq(l) {
+			margin-bottom: 0;
+			margin-right: 60px;
+		}
 	}
 	&__title {
 		margin-bottom: 30px;

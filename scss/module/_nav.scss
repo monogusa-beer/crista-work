@@ -1,14 +1,35 @@
 .nav {
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: rgba($color-kv-bg, 0.95);
-	transform: translateX(100%);
-	transition: all 0.3s ease;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-kv-bg, 0.95);
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+  @include mq(l) {
+    width: 520px;
+    left: initial;
+    right: 0;
+  }
+  &-bg {
+    @include mq(l) {
+      width: calc(100vw - 520px);
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: rgba($color-kv-bg, 0.6);
+      transform: translateX(100%);
+      transition: all 0.3s ease;
+    }
+  }
 }
 
 .is-navActive .nav {
-	transform: translateX(0);
+  transform: translateX(0);
+}
+
+.is-navActive .nav-bg {
+	transform: translateX(-520px);
 }

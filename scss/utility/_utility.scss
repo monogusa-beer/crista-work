@@ -2,6 +2,9 @@
 	font-size: 28px;
 	font-weight: 800;
 	text-transform: uppercase;
+	@include mq(m) {
+		font-size: 32px;
+	}
 }
 
 .u-btn {

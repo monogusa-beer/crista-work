@@ -13,11 +13,17 @@
   transition: background-color 0.3s;
   @include mq(m) {
     padding: 0 30px;
-  }
+	}
+	@include mq(l) {
+		padding: 0 58px;
+	}
   &__logo {
     display: block;
-    width: 190px;
-  }
+		width: 190px;
+		@include mq(l) {
+			width: 260px;
+		}
+   }
   &__menu {
     display: flex;
     align-items: center;

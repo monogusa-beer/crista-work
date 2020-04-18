@@ -3,6 +3,9 @@
 	height: 100vh;
 	position: relative;
 	margin-bottom: 78px;
+	@include mq(l) {
+		margin-bottom: 120px;
+	}
 	&__background {
 		background-color: $color-kv-bg;
 		width: 75%;
@@ -35,6 +38,12 @@
 		color: $color-white;
 		@include mq(m) {
 			right: 80px;
+		}
+		@include mq(l) {
+			top: 40%;
+			left: 75%;
+			right: initial;
+			transform: translate(-50%, -50%);
 		}
 	}
 }

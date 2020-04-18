@@ -1,5 +1,8 @@
 .topics {
 	padding: 40px 15px;
+	@include mq(m) {
+		padding: 40px 30px;
+	}
 	&__title {
 		margin-bottom: 30px;
 	}

@@ -33,5 +33,8 @@
 		right: 15px;
 		transform: translateY(-50%);
 		color: $color-white;
+		@include mq(m) {
+			right: 80px;
+		}
 	}
 }

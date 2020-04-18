@@ -5,5 +5,8 @@
 		width: 100%;
 		background-color: $color-content-bg;
 		padding: 40px 15px;
+		@include mq(m) {
+			padding: 60px 30px 40px;
+		}
 	}
 }

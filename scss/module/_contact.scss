@@ -1,6 +1,9 @@
 .contact  {
 	padding: 40px 15px;
 	background-color: $color-content-bg;
+	@include mq(m) {
+		padding: 40px calc(100% - 550px) 80px 30px;
+	}
 	&__img {
 		width: 100%;
 		margin-bottom: 30px;

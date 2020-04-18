@@ -1,20 +1,20 @@
 .sectionContainer {
-	width: 100%;
-	margin-bottom: 40px;
-	&__flexBox {
-		width: 100%;
-		background-color: $color-content-bg;
-		padding: 40px 15px;
-		@include mq(m) {
-			padding: 60px 30px 40px;
-		}
-		@include mq(l) {
-			padding: 180px 50px 60px;
-			display: flex;
-			justify-content: space-between;
-		}
-		@include mq(xl) {
-			padding: 180px calc((100vw - 1100px) / 2) 60px;
-		}
-	}
+  width: 100%;
+  margin-bottom: 40px;
+  &__flexBox {
+    width: 100%;
+    background-color: $color-content-bg;
+    padding: 40px 15px;
+    @include mq(s) {
+      padding: 60px 30px 40px;
+    }
+    @include mq(l) {
+      padding: 180px 50px 60px;
+      display: flex;
+      justify-content: space-between;
+    }
+    @include mq(xl) {
+      padding: 180px calc((100vw - 1100px) / 2) 60px;
+    }
+  }
 }

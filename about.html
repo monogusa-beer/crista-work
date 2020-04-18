@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="email=no,telephone=no,address=no" />
+    <title>ABOUT | DIGSMILE</title>
+
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- object-fit-imagesの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
+
+    <!-- picturefillの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.js"></script>
+
+    <!-- google fontの読み込み -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header id="header" class="header">
+      <a href="index.html"
+        ><img src="img/site-logo.svg" alt="DIGSMILE" class="header__logo"
+      /></a>
+      <div class="header__menu">
+        <button
+          type="button"
+          id="js-hamburgerButton"
+          class="hamburgerButton"
+          aria-controls="nav"
+          aria-expanded="false"
+        >
+          <span class="hamburgerButton__line">
+            <span class="u-visuallyHidden">
+              メニューを開閉する
+            </span>
+          </span>
+        </button>
+        <div class="nav-bg"></div>
+        <nav id="nav" class="nav">
+          <ul class="nav-list">
+            <li class="js-nav-list__item nav-list__item">
+              <a href="index.html"
+                ><img src="img/logo-icon.svg" alt="DIGSMILE"
+              /></a>
+            </li>
+            <li class="js-nav-list__item nav-list__item">
+              <a href="about.html">about us</a>
+            </li>
+            <li class="js-nav-list__item nav-list__item">
+              <a href="#works">works</a>
+            </li>
+            <li class="js-nav-list__item nav-list__item">
+              <a href="#culture">culture</a>
+            </li>
+            <li class="js-nav-list__item nav-list__item">
+              <a href="#topics">topics</a>
+            </li>
+            <li class="js-nav-list__item nav-list__item">
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <span>menu</span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="secondary-heading js-threshold">
+        <div class="secondary-heading__bg"></div>
+        <div class="secondary-heading__imgContainer">
+          <picture>
+            <source
+              media="(max-width: 559px)"
+              srcset="
+                img/about-heading_sp.jpg    1x,
+                img/about-heading_sp@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 959px)"
+              srcset="
+                img/about-heading_tab.jpg    1x,
+                img/about-heading_tab@2x.jpg 2x
+              "
+            />
+            <img
+              src="img/about-heading_pc.jpg"
+              srcset="img/about-heading_pc.jpg 1x, img/about-heading_pc@2x"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="secondary-heading__textContainer">
+          <h1 class="secondary-heading__title">about us</h1>
+          <p class="secondary-heading__subtitle">DIGSMILEについて</p>
+        </div>
+      </div>
+      <section class="vision">
+        <h2 class="vision__title u-title">vision</h2>
+        <p class="vision__subtitle">デザインで人を笑顔にする会社</p>
+        <p class="vision__text">私達のデザインで人が笑顔になる。</p>
+        <p class="vision__text">そんなデザインを目指しています。</p>
+        <p class="vision__text">
+          私達が考える人を笑顔にできるデザインとは、<br />
+          デザインが課題を適切に解決ができているかどうか。
+        </p>
+        <p class="vision__text">
+          ビジュアルだけではなく、<br />
+          本当に求められているものは何かを考え抜いて、<br />
+          デザインしていきたい。
+        </p>
+        <p class="vision__text">
+          誰かの幸せを創ることも、<br />
+          世界の常識を変えていくことだってできる。
+        </p>
+        <p class="vision__text">私達はデザインの力を信じています。</p>
+      </section>
+      <section class="message">
+        <img
+          src="img/ceo.jpg"
+          alt="CEO、テイラー・スウィフト"
+          srcset="img/ceo.jpg 1x, img/ceo@2x.jpg 2x"
+          class="message__img"
+        />
+        <div class="message__textContainer">
+          <h2 class="message__title u-title">ceo message</h2>
+          <p class="message__text">良いデザインは人を幸せにする。</p>
+          <p class="message__text">私達はそう信じています。</p>
+          <p class="message__text">
+            デザインを通して、ビジネスの課題とユーザーの課題を解決することで、世の中を幸せにしていきたい。
+          </p>
+          <p class="message__text">
+            現在はあらゆるプロダクトがデジタル化されており、デザイナーに対する需要はますます高まっています。それとともに、期待される役割も幅広くなりつつあります。
+          </p>
+          <p class="message__text">
+            クリエイティブで社会の可能性を切り開いていく。
+          </p>
+          <p class="message__text">
+            変化の激しい現代、私達はデザインの力で社会を良い方向に変革していく企業を目指していきます。
+          </p>
+        </div>
+      </section>
+      <section class="company">
+        <h2 class="company__title u-title">company</h2>
+        <table class="company__table">
+          <tbody>
+            <tr>
+              <th>社名</th>
+              <td>株式会社DIGSMILE</td>
+            </tr>
+            <tr>
+              <th>代表取締役</th>
+              <td>テイラー・スウィフト</td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>2020年1月1日</td>
+            </tr>
+            <tr>
+              <th>資本金</th>
+              <td>1億円</td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td>東京都新宿区☓☓0-0-0</td>
+            </tr>
+            <tr>
+              <th>電話番号</th>
+              <td>03-0000-00000</td>
+            </tr>
+          </tbody>
+        </table>
+        <iframe
+          class="company__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51840.05827899445!2d139.6741809199009!3d35.701527978378564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2059b7fd4b%3A0xec61c68fe232efd2!2z5p2x5Lqs6YO95paw5a6_5Yy6!5e0!3m2!1sja!2sjp!4v1587196977583!5m2!1sja!2sjp"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <small>©2018 DIGSMILE INC.</small>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 	&:not(:last-of-type) {
 		margin-bottom: 20px;
 	}
-	border-bottom: 1px solid $color-topics-line;
+	border-bottom: 1px solid $color-line;
 	&__date {
 		font-size: 10px;
 		color: $color-topics-date;

@@ -1,49 +1,49 @@
 .kv {
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	margin-bottom: 78px;
-	@include mq(l) {
-		margin-bottom: 120px;
-	}
-	&__background {
-		background-color: $color-kv-bg;
-		width: 75%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-	&__imgContainer {
-		width: 75%;
-		height: 87%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		img,
-		source {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center top;
-			vertical-align: bottom;
-			font-family: "object-fit: cover; object-position: center top;"; //IE対応
-		}
-	}
-	&__textContainer {
-		position: absolute;
-		top: 50%;
-		right: 15px;
-		transform: translateY(-50%);
-		color: $color-white;
-		@include mq(m) {
-			right: 80px;
-		}
-		@include mq(l) {
-			top: 40%;
-			left: 75%;
-			right: initial;
-			transform: translate(-50%, -50%);
-		}
-	}
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 78px;
+  @include mq(l) {
+    margin-bottom: 120px;
+  }
+  &__background {
+    background-color: $color-kv-bg;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__imgContainer {
+    width: 75%;
+    height: 87%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    img,
+    source {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      vertical-align: bottom;
+      font-family: "object-fit: cover; object-position: center top;"; //IE対応
+    }
+  }
+  &__textContainer {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: $color-white;
+    @include mq(s) {
+      right: 80px;
+    }
+    @include mq(l) {
+      top: 40%;
+      left: 75%;
+      right: initial;
+      transform: translate(-50%, -50%);
+    }
+  }
 }

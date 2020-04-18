@@ -1,0 +1,47 @@
+.message {
+	margin: 0 15px 80px;
+	@include mq(s) {
+		margin: 0 30px 80px;
+	}
+	@include mq(l) {
+		max-width: 1220px;
+		margin: 0 auto 120px;
+		padding: 0 60px;
+	}
+  &__img {
+    display: block;
+    width: 90%;
+		margin-bottom: -100px;
+		@include mq(s) {
+			width: 320px;
+		}
+		@include mq(l) {
+			width: 420px;
+		}
+  }
+  &__textContainer {
+    padding: 126px 28px 80px;
+		background-color: $color-content-bg;
+		@include mq(s) {
+			margin: 0 0 0 auto;
+			padding: 109px 40px 80px;
+			width: 500px;
+		}
+		@include mq(l) {
+			width: 770px;
+			padding: 120px 185px 90px;
+		}
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 2;
+  }
+  &__text:not(:last-of-type) {
+    margin-bottom: 36px;
+  }
+}

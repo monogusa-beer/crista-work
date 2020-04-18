@@ -1,28 +1,28 @@
 .sectionContainer-flexItem {
-	width: 100%;
-	@include mq(m) {
-		width: 520px;
-	}
-	&:not(:last-of-type) {
-		margin-bottom: 40px;
-		@include mq(m) {
-			margin-bottom: 80px;
-		}
-		@include mq(l) {
-			margin-bottom: 0;
-			margin-right: 60px;
-		}
-	}
-	&__title {
-		margin-bottom: 30px;
-	}
-	&__img {
-		width: 100%;
-		margin-bottom: 30px;
-	}
-	&__summary {
-		@include font-jp-sub;
-		letter-spacing: 0;
-		margin-bottom: 30px;
-	}
+  width: 100%;
+  @include mq(s) {
+    max-width: 520px;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+    @include mq(s) {
+      margin-bottom: 80px;
+    }
+    @include mq(l) {
+      margin-bottom: 0;
+      margin-right: 60px;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &__summary {
+    @include font-jp-sub;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+  }
 }

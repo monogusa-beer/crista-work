@@ -31,9 +31,9 @@ $(function () {
 		$("#js-hamburgerButton").attr("aria-expanded", false);
 	});
 
-	// kvを越えたらヘッダーの背景色変更
+	// thresholdを越えたらヘッダーの背景色変更
 	$(window).on("scroll", function () {
-		let threshold = $("#kv").outerHeight();
+		let threshold = $(".js-threshold").outerHeight();
 		if ($(this).scrollTop() > threshold) {
 			$("body").addClass("is-headerActive");
 		} else {

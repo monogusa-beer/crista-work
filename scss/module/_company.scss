@@ -1,0 +1,55 @@
+.company {
+	padding: 0 15px 80px;
+	@include mq(s) {
+		padding: 0 30px 80px;
+	}
+	@include mq(l) {
+		max-width: 1220px;
+		padding: 0 60px 120px;
+		margin: 0 auto;
+	}
+	&__title {
+		border-bottom: solid 1px $color-line;
+		padding-bottom: 30px;
+	}
+	&__table {
+		font-size: 14px;
+		width: 100%;
+		margin-bottom: 40px;
+		@include mq(s) {
+			margin: 0 0 40px auto;
+			max-width: 678px;
+		}
+		@include mq(l) {
+			max-width: 800px;
+		}
+		th {
+			width: 40%;
+			font-weight: bold;
+			border-bottom: solid 1px $color-line;
+			padding: 20px 0;
+			text-align: left;
+			@include mq(s) {
+				width: 20%;
+			}
+		}
+		td {
+			width: 60%;
+			border-bottom: solid 1px $color-line;
+			padding: 20px 0;
+			@include mq(s) {
+				width: 80%;
+			}
+		}
+	}
+	&__map {
+		width: 100%;
+		height: 470px;
+		@include mq(s) {
+			height: 230px;
+		}
+		@include mq(l) {
+			height: 360px;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.vision {
+	padding: 80px 15px;
+	@include mq(s) {
+		padding-left: 150px;
+	}
+	@include mq(l) {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding: 120px 0 120px 270px;
+	}
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 2;
+  }
+  &__text:not(:last-of-type) {
+    margin-bottom: 36px;
+  }
+}

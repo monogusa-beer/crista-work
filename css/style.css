@@ -831,6 +831,7 @@ a:hover {
 .secondary-heading__imgContainer img,
 .secondary-heading__imgContainer source {
   width: 100%;
+  vertical-align: bottom;
 }
 
 .secondary-heading__textContainer {
@@ -866,6 +867,52 @@ a:hover {
 .secondary-heading__subtitle {
   font-weight: bold;
   letter-spacing: 0;
+}
+
+.secondary-heading__indication {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 58px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+@media screen and (min-width: 560px) {
+  .secondary-heading__indication {
+    display: none;
+  }
+}
+
+.secondary-heading__indication::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: calc(100vw - 66px - (75vw * 0.94));
+  background-color: #333;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+}
+
+.secondary-heading__indication::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 84px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: calc(-7px - (100vw - 66px - 75vw * 0.94));
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
 }
 
 .vision {

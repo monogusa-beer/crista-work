@@ -48,6 +48,7 @@
     img,
     source {
       width: 100%;
+      vertical-align: bottom;
     }
   }
   &__textContainer {
@@ -74,5 +75,41 @@
   &__subtitle {
     font-weight: bold;
     letter-spacing: 0;
+  }
+  &__indication {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 58px;
+    transform: rotate(-90deg);
+		transform-origin: bottom left;
+		@include mq(s) {
+			display: none;
+		}
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: calc(100vw - 66px - (75vw * 0.94));
+      background-color: $color-black;
+      position: absolute;
+      top: 50%;
+      right: -8px;
+      transform: translate(100%, -50%);
+    }
+    &::after {
+      content: "";
+      display: block;
+			height: 1px;
+			width: 84px;
+			background-color: $color-white;
+			position: absolute;
+			top: 50%;
+			right: calc(-7px - (100vw - 66px - 75vw * 0.94));
+      transform: translate(100%, -50%);
+    }
   }
 }

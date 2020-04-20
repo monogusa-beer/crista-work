@@ -1,0 +1,15 @@
+.contactPage {
+  padding: 80px 15px;
+  @include mq(s) {
+    padding: 135px 50px 200px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  &__summary {
+    font-size: 14px;
+    @include font-jp-sub;
+    letter-spacing: 0;
+    line-height: 1.8;
+    margin-bottom: 50px;
+  }
+}

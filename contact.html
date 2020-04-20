@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="email=no,telephone=no,address=no" />
+    <title>CONTACT | DIGSMILE</title>
+
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Font Awesome の読み込み-->
+    <script
+      src="https://kit.fontawesome.com/dd74283033.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- object-fit-imagesの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js"></script>
+
+    <!-- picturefillの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.js"></script>
+
+    <!-- google fontの読み込み -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header id="header" class="header">
+      <a href="index.html"
+        ><img src="img/site-logo.svg" alt="DIGSMILE" class="header__logo"
+      /></a>
+      <div class="header__menu">
+        <button
+          type="button"
+          id="js-hamburgerButton"
+          class="hamburgerButton"
+          aria-controls="nav"
+          aria-expanded="false"
+        >
+          <span class="hamburgerButton__line">
+            <span class="u-visuallyHidden">
+              メニューを開閉する
+            </span>
+          </span>
+        </button>
+        <div class="nav-bg"></div>
+        <nav id="nav" class="nav">
+          <ul class="nav-list">
+            <li class="js-nav-list__item nav-list__item">
+              <a href="index.html"
+                ><img src="img/logo-icon.svg" alt="DIGSMILE"
+              /></a>
+            </li>
+            <li class="js-nav-list__item nav-list__item">
+              <a href="about.html">about us</a>
+            </li>
+            <li class="js-nav-list__item nav-list__item">
+              <a href="#works">works</a>
+            </li>
+            <li class="js-nav-list__item nav-list__item">
+              <a href="#culture">culture</a>
+            </li>
+            <li class="js-nav-list__item nav-list__item">
+              <a href="#topics">topics</a>
+            </li>
+            <li class="js-nav-list__item nav-list__item">
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <span>menu</span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="secondary-heading --small js-threshold">
+        <div class="secondary-heading__bg --small"></div>
+        <div class="secondary-heading__imgContainer">
+          <picture>
+            <source
+              media="(max-width: 559px)"
+              srcset="
+                img/contact-heading_sp.jpg    1x,
+                img/contact-heading_sp@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 959px)"
+              srcset="
+                img/contact-heading_tab.jpg    1x,
+                img/contact-heading_tab@2x.jpg 2x
+              "
+            />
+            <img
+              src="img/contact-heading_pc.jpg"
+              srcset="img/contact-heading_pc.jpg 1x, img/contact-heading_pc@2x"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="secondary-heading__textContainer">
+          <h1 class="secondary-heading__title">contact</h1>
+          <p class="secondary-heading__subtitle">お問い合わせ</p>
+        </div>
+      </div>
+      <section class="contactPage">
+        <p class="contactPage__summary">
+          ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。
+        </p>
+        <form action="" method="POST" class="form">
+          <fieldset class="form__container">
+            <legend class="form__label --mb20 --required --required">
+              お問い合わせ種別
+            </legend>
+            <div class="form__radio">
+              <input id="request" type="radio" name="category" />
+              <label for="request" class="form__radio__label">制作依頼</label>
+            </div>
+            <div class="form__radio">
+              <input id="recruit" type="radio" name="category" />
+              <label for="recruit" class="form__radio__label">採用</label>
+            </div>
+            <div class="form__radio">
+              <input id="IR" type="radio" name="category" />
+              <label for="IR" class="form__radio__label">IR</label>
+            </div>
+            <div class="form__radio">
+              <input id="other" type="radio" name="category" />
+              <label for="other" class="form__radio__label">その他</label>
+            </div>
+          </fieldset>
+          <div class="form__container">
+            <label for="company-name" class="form__label">会社名・団体名</label>
+            <input class="form__input" id="company-name" type="text" />
+          </div>
+          <div class="form__container">
+            <label for="name" class="form__label --required">お名前</label>
+            <input class="form__input" id="name" type="text" />
+          </div>
+          <div class="form__container">
+            <label for="mail" class="form__label --required"
+              >メールアドレス</label
+            >
+            <input class="form__input" id="mail" type="email" />
+          </div>
+          <div class="form__container">
+            <label for="tel" class="form__label">電話番号</label>
+            <input class="form__input" id="tel" type="tel" />
+          </div>
+          <div class="form__container">
+            <label for="content" class="form__label --required"
+              >お問い合わせ内容
+            </label>
+            <textarea
+              class="form__textarea"
+              id="content"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <p class="privacyPolicy__label">privacy policy</p>
+          <div class="privacyPolicy__box">
+            <p>個人情報保護方針</p>
+            <p>
+              株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。
+            </p>
+            <p>
+              1.個人情報の収集、利用<br />
+              当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。
+            </p>
+            <p>
+              2.個人情報の第三者への開示と提供<br />
+              収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。<br />
+              業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。
+            </p>
+            <p>
+              3.個人情報の保護<br />
+              当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。
+            </p>
+            <p>
+              4.法令および関連規範の遵守<br />
+              当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。
+            </p>
+            <p>
+              5.個人情報の開示・訂正・削除<br />
+              当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。
+            </p>
+            <p>
+              法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。
+            </p>
+            <p>
+              お問い合わせ窓口<br />
+              当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。<br />
+              株式会社ファイアープレイス 044-589-4333
+            </p>
+          </div>
+          <label class="privacyPolicy__agreeLabel"
+            ><input
+              class="privacyPolicy__checkbox"
+              type="checkbox"
+            />個人情報の取り扱いについて同意のうえ送信します。</label
+          >
+          <button type="submit" class="form__button u-btn">送信</button>
+        </form>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <small>©2018 DIGSMILE INC.</small>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

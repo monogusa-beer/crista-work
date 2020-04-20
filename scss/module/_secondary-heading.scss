@@ -1,26 +1,44 @@
 .secondary-heading {
   width: 100vw;
-	height: calc(100vw * 1.2);
-	position: relative;
+  height: calc(100vw * 1.2);
+  position: relative;
   @include mq(s) {
     height: calc(100vw * 0.78);
-	}
-	@include mq(l) {
-		height: calc(100vw * 0.32);
-	}
+  }
+  @include mq(l) {
+    height: calc(100vw * 0.32);
+  }
+  &.--small {
+    height: 100vw;
+    @include mq(s) {
+      height: calc(100vw * 0.78);
+    }
+    @include mq(l) {
+      height: calc(100vw * 0.32);
+    }
+  }
   &__bg {
-		width: 50vw;
+    width: 50vw;
     position: absolute;
     top: 0;
     right: 0;
     height: calc(100vw * 1.2);
     background-color: $color-kv-bg;
     @include mq(s) {
-			height: calc(100vw * 0.78);
-		}
-		@include mq(l) {
-			height: calc(100vw * 0.32);
-		}
+      height: calc(100vw * 0.78);
+    }
+    @include mq(l) {
+      height: calc(100vw * 0.32);
+    }
+    &.--small {
+      height: 100vw;
+      @include mq(s) {
+        height: calc(100vw * 0.78);
+      }
+      @include mq(l) {
+        height: calc(100vw * 0.32);
+      }
+    }
   }
   &__imgContainer {
     width: 75vw;
@@ -36,15 +54,15 @@
     color: $color-white;
     position: absolute;
     top: 30%;
-		right: 30px;
-		@include mq(s) {
-			right: 100px;
-		}
-		@include mq(l) {
-			top: 50%;
-			right: 170px;
-			transform: translateY(-50%);
-		}
+    right: 30px;
+    @include mq(s) {
+      right: 100px;
+    }
+    @include mq(l) {
+      top: 50%;
+      right: 170px;
+      transform: translateY(-50%);
+    }
   }
   &__title {
     font-size: 52px;
